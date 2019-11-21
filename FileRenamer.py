@@ -9,7 +9,7 @@ def main():
         dst = "./Output/" + filename
         copyfile(src, dst)
         src = "./Output/" + filename
-        dst = src + "_" + str(j) + ".jpg"
+        dst = src + "_" + str(j).zfill(4) + ".jpg"
         os.rename(src, dst)
         j += 1
 
